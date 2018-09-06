@@ -1,3 +1,8 @@
+#Create template folder in project folder and place html files there. such as home.html
+#import render_template function to return the template
+
+#Uses Jinja2 templates
+#uses Bootstrap library for html - starter template from their website
 from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
