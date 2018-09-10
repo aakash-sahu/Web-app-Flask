@@ -1,0 +1,10 @@
+#for password hashing flask_bcrypt
+#bcrypt.generate_password_hash('testing').decode('utf-8')
+
+>>> hashed_pw= bcrypt.generate_password_hash('testing').decode('utf-8')
+>>> hashed_pw
+'$2b$12$GVgWmY1rE9lXna83aMiQ/uinXFkavcOuS6hFjTE6RjPXyRo6TRi.O'
+>>> bcrypt.check_password_hash(hashed_pw, 'password')
+False
+>>> bcrypt.check_password_hash(hashed_pw, 'testing')
+True
